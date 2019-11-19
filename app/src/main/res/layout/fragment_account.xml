@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    tools:context=".AccountFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:focusableInTouchMode="true"
+            android:background="#e9e9e9"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+
+        <LinearLayout
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+
+            <com.RadioSfax.acer.radiosfax.CustomFonts.FontTextViewRegular
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:textSize="28sp"
+                android:text="Karim Chaari"
+                android:gravity="center_vertical"
+                android:textColor="@color/GreyBlackForma"
+                android:id="@+id/name_text"
+                />
+
+
+
+            <com.RadioSfax.acer.radiosfax.CustomButton
+                android:id="@+id/edit_button"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="2.7"
+                android:text="@string/Modifier"
+                app:backgroundTint="@color/GreyBlackForma"
+                app:cornerRadius="12dp"
+                android:textSize="10sp"
+                android:textColor="#fff"
+                android:gravity="center_vertical"
+                />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+
+            <com.RadioSfax.acer.radiosfax.CustomFonts.FontTextViewLight
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:textSize="20sp"
+                android:text="Sakkiet Eddaier , Sfax"
+                android:gravity="center_vertical"
+                android:id="@+id/location_text"
+
+                />
+
+
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+
+            <com.RadioSfax.acer.radiosfax.CustomFonts.FontTextViewRegular
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:textSize="21sp"
+                android:text="0 points de fidélité"
+                android:gravity="center_vertical"
+                android:textColor="@color/GreyBlackForma"
+                android:id="@+id/points_text"
+                />
+
+
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+
+            <com.RadioSfax.acer.radiosfax.CustomButton
+                android:id="@+id/lire_suite_btn"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:text="Voir les régles de fidélité"
+                android:textColor="@color/GreyBlackForma"
+                android:textSize="11sp"
+                app:cornerRadius="12dp" />
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"/>
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#bfbbbb"
+
+
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.RadioSfax.acer.radiosfax.CustomFonts.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="21sp"
+                android:text="Mes Réclamations :"
+                android:textColor="@color/GreyBlackForma"
+                android:padding="6dp"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:paddingTop="5dp"
+                android:id="@+id/news_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

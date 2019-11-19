@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <LinearLayout
+            android:background="@color/black_alpha_40"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/button_close_filter"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:tint="@color/LoginColorWhite"
+                app:srcCompat="@drawable/ic_close_white" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                android:textColor="@color/GreyBlackForma" />
+
+            <ImageButton
+                android:id="@+id/button_save_filter"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:tint="@color/LoginColorWhite"
+                app:srcCompat="@drawable/ic_done_white" />
+
+
+
+        </LinearLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:scrollingCache="true"
+        android:background="@color/black_alpha_40">
+
+            <LinearLayout
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+                <com.RadioSfax.acer.radiosfax.CustomFonts.FontTextArial
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enregistrez et envoyez votre son à notre Radio!"
+                    android:textSize="21sp"
+                    android:layout_gravity="center"
+                    android:textColor="#fff"
+                    android:gravity="center"
+                    android:id="@+id/topText"/>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+                <com.RadioSfax.acer.radiosfax.CustomFonts.FontTextArial
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Appuyez sur le bouton rouge pour enregistrer votre son "
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:textColor="#fff"
+                    android:gravity="center"
+                    android:id="@+id/topText2"/>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+
+                <com.RadioSfax.acer.radiosfax.CustomFonts.FontTextArial
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Choisir la catégorie"
+                    android:textSize="19sp"
+                    android:layout_gravity="center"
+                    android:textColor="#fff"
+                    />
+
+
+            <android.support.design.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+
+                <com.jaredrummler.materialspinner.MaterialSpinner
+                    android:id="@+id/spinnerCategories"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </android.support.design.card.MaterialCardView>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <LinearLayout
+                    android:weightSum="3"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <com.RadioSfax.acer.radiosfax.CustomFonts.FontTextArial
+                        android:layout_width="0dp"
+                        android:layout_weight="1.25"
+                        android:layout_height="wrap_content"
+                        android:text="Ajouter une image"
+                        android:textSize="19sp"
+                        android:layout_gravity="left"
+                        android:textColor="#fff"
+                        android:gravity="center"
+                        />
+                    <com.RadioSfax.acer.radiosfax.CustomFonts.FontTextArial
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_height="wrap_content"
+                        android:text="OU"
+                        android:textSize="19sp"
+                        android:layout_gravity="left"
+                        android:textColor="#fff"
+                        android:gravity="center"
+                        />
+                    <com.RadioSfax.acer.radiosfax.CustomFonts.FontTextArial
+                        android:layout_width="0dp"
+                        android:layout_weight="1.25"
+                        android:layout_height="wrap_content"
+                        android:text="Enregistrement audio"
+                        android:textSize="19sp"
+                        android:layout_gravity="left"
+                        android:textColor="#fff"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <LinearLayout
+                    android:weightSum="3"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+                    <ImageView
+                        android:id="@+id/camBtn"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.5"
+                        android:layout_height="64dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/camera"/>
+
+                    <pl.bclogic.pulsator4droid.library.PulsatorLayout
+                        android:id="@+id/pulsator"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.5"
+                        android:layout_height="wrap_content"
+                        app:pulse_count="4"
+                        app:pulse_repeat="0"
+                        app:pulse_color="#fff"
+                        app:pulse_startFromScratch="true"
+                        app:pulse_interpolator="Decelerate">
+                        <ImageView
+                            android:id="@+id/imageaa"
+                            android:layout_width="54dp"
+                            android:layout_height="54dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/record"
+                            android:contentDescription="@string/test"/>
+
+
+                    </pl.bclogic.pulsator4droid.library.PulsatorLayout>
+
+
+                </LinearLayout>
+
+
+
+
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <pl.bclogic.pulsator4droid.library.PulsatorLayout
+                    android:visibility="gone"
+                    android:id="@+id/pulsator1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    app:pulse_count="4"
+                    app:pulse_repeat="0"
+                    app:pulse_color="#78b924"
+                    app:pulse_startFromScratch="true"
+                    app:pulse_interpolator="Decelerate">
+                    <ImageView
+                        android:id="@+id/playBtn1"
+                        android:layout_width="54dp"
+                        android:layout_height="54dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/play"
+                        android:contentDescription="@string/test"/>
+
+
+                </pl.bclogic.pulsator4droid.library.PulsatorLayout>
+
+
+
+
+                <Chronometer
+                    android:layout_gravity="center"
+                    android:textColor="#fff"
+                    android:visibility="gone"
+                    android:id="@+id/simpleChronometer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:format="Enregistrement du son - %s"/>
+
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <com.RadioSfax.acer.radiosfax.CustomButton
+                    style="@style/Widget.MaterialComponents.Button"
+                    app:backgroundTint="#fff"
+                    android:visibility="gone"
+                    android:id="@+id/envoyer_btn"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="ENVOYER"
+                    android:textColor="#000"
+                    app:cornerRadius="12dp"
+                    android:textSize="14sp"
+
+                    android:layout_gravity="center"/>
+
+
+
+
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

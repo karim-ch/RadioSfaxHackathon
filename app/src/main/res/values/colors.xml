@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4e4e4e</color>
+    <color name="colorPrimaryDark">#546e7a</color>
+    <color name="colorAccent">#546e7a</color>
+
+
+
+    <color name="GreyBlackForma">#4e4e4e</color>
+    <color name="OrangeForma">#546e7a</color>
+    <color name="LoginColorWhite">#F5F5F5</color>
+
+    <color name="black_alpha_40">#e7000000</color>
+
+
+</resources>

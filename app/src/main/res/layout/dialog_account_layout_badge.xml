@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="375dp"
+    android:gravity="center"
+    android:background="#fff"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardElevation="2dp"
+    app:cardCornerRadius="4dp"
+    app:cardPreventCornerOverlap="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:padding="10dp"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/badges" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+
+        <at.markushi.ui.CircleButton
+            android:layout_gravity="center"
+            android:id="@+id/close_dialog_btn2"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/x_icon"
+            app:cb_color="#F6F6F6"
+            app:cb_pressedRingWidth="4dp" />
+
+
+    </LinearLayout>
+
+
+
+</android.support.design.card.MaterialCardView>

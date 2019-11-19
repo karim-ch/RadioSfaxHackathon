@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConcoursActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="250dp"
+            android:layout_height="120dp"
+            android:src="@drawable/cc"/>
+
+        <com.RadioSfax.acer.radiosfax.CustomFonts.FontTextSourceSansProRegular
+            android:layout_margin="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Quel est l'animatrice de l'emission SmartCity ?"/>
+
+
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hanene Trichelli"/>
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hanene Chograni"/>
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hanene Masmoudi"/>
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hanene Bellaaj"/>
+
+
+
+
+        </RadioGroup>
+
+
+
+        <com.RadioSfax.acer.radiosfax.CustomFonts.FontTextSourceSansProRegular
+            android:layout_margin="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Quel philosophe conclut “Je pense, donc je suis.” ?"/>
+
+
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Descartes"/>
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Heidegger"/>
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hegel"/>
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Socrate"/>
+
+
+
+
+        </RadioGroup>
+
+
+
+
+        <com.RadioSfax.acer.radiosfax.CustomButton
+            android:layout_gravity="center"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="Envoyer"
+            android:textColor="#fff"
+            android:backgroundTint="@color/colorAccent"/>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EquipeFragment"
+    android:orientation="vertical">
+
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.RadioSfax.acer.radiosfax.CustomFonts.FontTextSourceSansProRegular
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:text="L'equipe : "/>
+
+        <ImageView
+            android:src="@drawable/abcd"
+            android:layout_width="match_parent"
+            android:layout_height="120dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <ImageView
+            android:src="@drawable/wefrfvdf"
+            android:layout_width="match_parent"
+            android:layout_height="120dp" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <ImageView
+            android:src="@drawable/ijk"
+            android:layout_width="match_parent"
+            android:layout_height="120dp" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <ImageView
+            android:src="@drawable/lmn"
+            android:layout_width="match_parent"
+            android:layout_height="120dp" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <ImageView
+            android:src="@drawable/yyythtyhtt"
+            android:layout_width="match_parent"
+            android:layout_height="120dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <ImageView
+            android:src="@drawable/rst"
+            android:layout_width="match_parent"
+            android:layout_height="120dp" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <ImageView
+            android:src="@drawable/uvw"
+            android:layout_width="match_parent"
+            android:layout_height="120dp" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <ImageView
+            android:src="@drawable/wwwww"
+            android:layout_width="match_parent"
+            android:layout_height="120dp" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <ImageView
+            android:src="@drawable/zzzzz"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+    </LinearLayout>
+
+
+
+</ScrollView>
